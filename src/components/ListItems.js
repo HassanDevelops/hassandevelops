@@ -11,6 +11,8 @@ const ListItems = ({ listItemsArray }) => {
   );
 };
 
-ListItems.propTypes = {};
+ListItems.propTypes = {
+  listItemsArray: PropTypes.array,
+};
 
 export default ListItems;

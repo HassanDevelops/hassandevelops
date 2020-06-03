@@ -5,6 +5,8 @@ const HeadingTitle = ({ titleText }) => {
   return <div>{titleText}</div>;
 };
 
-HeadingTitle.propTypes = {};
+HeadingTitle.propTypes = {
+  titleText: PropTypes.string,
+};
 
 export default HeadingTitle;
