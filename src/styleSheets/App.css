@@ -11,6 +11,14 @@ body {
   font-family: "Oswald";
   color: rgb(204, 214, 246);
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 10% 1fr 10%;
+}
+.container-child {
+  grid-column-start: 2;
+}
 .title-heading {
   transition-delay: "100ms";
   font-size: 3.5rem;
