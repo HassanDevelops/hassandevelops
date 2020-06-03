@@ -1,7 +1,7 @@
 import React from "react";
 
 const ThirdHeading = ({ headingText }) => {
-  return <div className="third-heading">{headingText}</div>;
+  return <div >{headingText}</div>;
 };
 
 export default ThirdHeading;

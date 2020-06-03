@@ -1,7 +1,7 @@
 import React from "react";
 
 const TitleHeading = ({ headingText }) => {
-  return <div className="title-heading">{headingText}</div>;
+  return <div >{headingText}</div>;
 };
 
 export default TitleHeading;
