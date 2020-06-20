@@ -45,120 +45,130 @@ export default function ListItems({ Data }) {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardContent>
-          <TableContainer component={Paper}>
-            <Table
-              className={classes.table}
-              size="small"
-              aria-label="a dense table"
-            >
-              <TableHead>
-                <TableRow>
-                  <StyledTableCell noWrap="false">{Data.model}</StyledTableCell>
-                  <StyledTableCell></StyledTableCell>
-                </TableRow>
-              </TableHead>
+    <div className="main-flex-box-child ">
+      <Card className={classes.root}>
+        <CardActionArea>
+          <CardContent>
+            <TableContainer component={Paper}>
+              <Table
+                className={classes.table}
+                size="small"
+                aria-label="a dense table"
+              >
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell noWrap="false">
+                      {Data.model}
+                    </StyledTableCell>
+                    <StyledTableCell></StyledTableCell>
+                  </TableRow>
+                </TableHead>
 
-              <TableBody>
-                <CardMedia
-                  component="img"
-                  alt={Data.model}
-                  image={Data.img_url}
-                  title={Data.model}
-                />
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    Brand
-                  </StyledTableCell>
-                  <StyledTableCell align="right">{Data.brand}</StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    Model
-                  </StyledTableCell>
-                  <StyledTableCell align="right">{Data.model}</StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    Network Technology
-                  </StyledTableCell>
-                  <StyledTableCell align="right">
-                    {Data.network_technology}
-                  </StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    2G Bands
-                  </StyledTableCell>
-                  <StyledTableCell align="right">
-                    {Data.twoG_bands}
-                  </StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    3G Bands
-                  </StyledTableCell>
-                  <StyledTableCell align="right">
-                    {Data.threeoG_bands}
-                  </StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    Network Speed
-                  </StyledTableCell>
-                  <StyledTableCell align="right">
-                    {Data.network_speed}
-                  </StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    GPRS
-                  </StyledTableCell>
-                  <StyledTableCell align="right">{Data.GPRS}</StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    EDGE
-                  </StyledTableCell>
-                  <StyledTableCell align="right">{Data.EDGE}</StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    Announced
-                  </StyledTableCell>
-                  <StyledTableCell align="right">
-                    {Data.announced}
-                  </StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    Status
-                  </StyledTableCell>
-                  <StyledTableCell align="right">{Data.status}</StyledTableCell>
-                </StyledTableRow>
-                <StyledTableRow>
-                  <StyledTableCell component="th" scope="row">
-                    Dimentions
-                  </StyledTableCell>
-                  <StyledTableCell align="right">
-                    {Data.dimentions}
-                  </StyledTableCell>
-                </StyledTableRow>
-              </TableBody>
-            </Table>
-          </TableContainer>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
+                <TableBody>
+                  <CardMedia
+                    component="img"
+                    alt={Data.model}
+                    image={Data.img_url}
+                    title={Data.model}
+                  />
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      Brand
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.brand}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      Model
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.model}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      Network Technology
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.network_technology}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      2G Bands
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.twoG_bands}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      3G Bands
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.threeoG_bands}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      Network Speed
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.network_speed}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      GPRS
+                    </StyledTableCell>
+                    <StyledTableCell align="right">{Data.GPRS}</StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      EDGE
+                    </StyledTableCell>
+                    <StyledTableCell align="right">{Data.EDGE}</StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      Announced
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.announced}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      Status
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.status}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                  <StyledTableRow>
+                    <StyledTableCell component="th" scope="row">
+                      Dimentions
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                      {Data.dimentions}
+                    </StyledTableCell>
+                  </StyledTableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            Share
+          </Button>
+          <Button size="small" color="primary">
+            Learn More
+          </Button>
+        </CardActions>
+      </Card>
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import ListItems from "./ListItems";
 const SecondaryHeading = () => {
   const [limitTo, setLimitTo] = useState(10);
   return (
-    <div>
+    <div className="main-flex-box">
       {Data.slice(0, limitTo).map((data, index) => (
         <ListItems Data={data} key={index} />
       ))}
