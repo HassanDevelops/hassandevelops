@@ -1,7 +1,14 @@
 import React from "react";
-
-const SecondaryHeading = ({ headingText }) => {
-  return <div>{headingText}</div>;
+import Data from "../driver_registration copy.json";
+import ListItems from "./ListItems";
+const SecondaryHeading = () => {
+  return (
+    <div>
+      {Data.map((data, index) => (
+        <ListItems Data={data} key={index} />
+      ))}
+    </div>
+  );
 };
 
 export default SecondaryHeading;
