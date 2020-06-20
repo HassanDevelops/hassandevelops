@@ -48,13 +48,6 @@ export default function ListItems({ Data }) {
     <Card className={classes.root}>
       <CardActionArea>
         <CardContent>
-          <CardMedia
-            component="img"
-            alt={Data.model}
-            image={Data.img_url}
-            title={Data.model}
-          />
-
           <TableContainer component={Paper}>
             <Table
               className={classes.table}
@@ -63,11 +56,18 @@ export default function ListItems({ Data }) {
             >
               <TableHead>
                 <TableRow>
-                  <StyledTableCell>{Data.model}</StyledTableCell>
+                  <StyledTableCell noWrap="false">{Data.model}</StyledTableCell>
                   <StyledTableCell></StyledTableCell>
                 </TableRow>
               </TableHead>
+
               <TableBody>
+                <CardMedia
+                  component="img"
+                  alt={Data.model}
+                  image={Data.img_url}
+                  title={Data.model}
+                />
                 <StyledTableRow>
                   <StyledTableCell component="th" scope="row">
                     Brand
@@ -110,6 +110,40 @@ export default function ListItems({ Data }) {
                   </StyledTableCell>
                   <StyledTableCell align="right">
                     {Data.network_speed}
+                  </StyledTableCell>
+                </StyledTableRow>
+                <StyledTableRow>
+                  <StyledTableCell component="th" scope="row">
+                    GPRS
+                  </StyledTableCell>
+                  <StyledTableCell align="right">{Data.GPRS}</StyledTableCell>
+                </StyledTableRow>
+                <StyledTableRow>
+                  <StyledTableCell component="th" scope="row">
+                    EDGE
+                  </StyledTableCell>
+                  <StyledTableCell align="right">{Data.EDGE}</StyledTableCell>
+                </StyledTableRow>
+                <StyledTableRow>
+                  <StyledTableCell component="th" scope="row">
+                    Announced
+                  </StyledTableCell>
+                  <StyledTableCell align="right">
+                    {Data.announced}
+                  </StyledTableCell>
+                </StyledTableRow>
+                <StyledTableRow>
+                  <StyledTableCell component="th" scope="row">
+                    Status
+                  </StyledTableCell>
+                  <StyledTableCell align="right">{Data.status}</StyledTableCell>
+                </StyledTableRow>
+                <StyledTableRow>
+                  <StyledTableCell component="th" scope="row">
+                    Dimentions
+                  </StyledTableCell>
+                  <StyledTableCell align="right">
+                    {Data.dimentions}
                   </StyledTableCell>
                 </StyledTableRow>
               </TableBody>
