@@ -70,6 +70,7 @@ export default function ListItems({ Data }) {
                     alt={Data.model}
                     image={Data.img_url}
                     title={Data.model}
+                    height="auto"
                   />
                   <StyledTableRow>
                     <StyledTableCell component="th" scope="row">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Data from "../driver_registration.json";
+import Data from "../assets/driver_registration.json";
 import ListItems from "./ListItems";
 const SecondaryHeading = () => {
   const [limitTo, setLimitTo] = useState(10);
